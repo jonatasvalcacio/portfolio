@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Currículo — Jonatas Valcácio</title>
+<!-- Fonte do currículo. Para gerar o PDF: node curriculo/gerar-pdf.js -->
+<style>
+@page{size:A4;margin:0}
+:root{--ink:#1d2a2f;--txt:#2c3437;--muted:#5d6a6e;--accent:#14a58a;--accent-soft:#e8f5f1;--side:#eef4f2;--line:#cfe0db}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{width:210mm;height:297mm;font-family:Inter,"Inter Display",Arial,sans-serif;color:var(--txt);font-size:8pt;line-height:1.36;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+a{color:inherit;text-decoration:none}
+.page{position:relative;width:210mm;height:297mm;padding:9mm 10mm 7mm;overflow:hidden}
+.head{display:flex;align-items:center;gap:7mm;background:var(--ink);color:#fff;padding:4.6mm 7mm;margin:0 0 5mm}
+.head img{width:27mm;height:27mm;object-fit:cover;flex:none}
+.head h1{margin:0;font-size:24pt;font-weight:800;letter-spacing:.04em;line-height:1}
+.head .role{margin:2.6mm 0 1.6mm;color:#5ee0c3;font-weight:700;font-size:9.6pt;letter-spacing:.02em}
+.head .meta{margin:0;color:#c9d3d5;font-size:8.2pt}
+.links{display:flex;gap:2.4mm;margin-top:3mm}
+.links a{display:inline-flex;align-items:center;gap:1.6mm;padding:1.3mm 3.2mm;border-radius:99px;font-size:8pt;font-weight:700}
+.links .be{background:#1769ff;color:#fff}
+.links .pf{background:#5ee0c3;color:var(--ink)}
+.links .be b{font-weight:800;font-size:8.6pt}
+.cols{display:grid;grid-template-columns:60mm 1fr;gap:6mm}
+.side{background:var(--side);padding:4.5mm 4.2mm;min-height:calc(297mm - 9mm - 7mm - 36mm - 5mm)}
+h2{margin:0 0 2.4mm;padding-bottom:1.6mm;border-bottom:1px solid var(--line);color:var(--accent);font-size:8.8pt;font-weight:800;letter-spacing:.04em;text-transform:uppercase}
+section{margin-bottom:3.4mm}
+.kv{display:grid;gap:1.3mm;margin:0}
+.kv div{display:grid;grid-template-columns:14mm 1fr;gap:1.2mm}
+.kv dt{font-weight:700;color:var(--ink)}
+.kv dd{margin:0;color:var(--muted);font-size:7.2pt;white-space:nowrap}
+.kv dd a{color:var(--accent);font-weight:600}
+.tool{display:flex;justify-content:space-between;align-items:center;margin-bottom:.9mm}
+.tool b{color:var(--ink);font-weight:700}
+.dots{letter-spacing:.6mm;color:var(--accent);font-size:7.6pt;white-space:nowrap}
+.dots i{font-style:normal;color:#b9cec8}
+ul{margin:0;padding:0;list-style:none}
+.side li,.list li{position:relative;padding-left:3mm;margin-bottom:.5mm}
+.side li::before,.list li::before{content:"";position:absolute;left:0;top:1.55mm;width:1.2mm;height:1.2mm;border-radius:50%;background:var(--accent)}
+.lead{margin:0;font-size:8.5pt;line-height:1.45}
+.job{margin-bottom:2mm}
+.job h3{margin:0;font-size:9.4pt;color:var(--ink);font-weight:700}
+.job .where{margin:.1mm 0 .6mm;color:var(--muted);font-size:7.9pt}
+.job .where b{color:var(--accent);font-weight:700;font-size:8.3pt}
+.job .where span::before{content:"|";margin:0 1.6mm;color:#a9b7b9}
+.tech{background:var(--accent-soft);border-left:2.4px solid var(--accent);padding:2.6mm 3.4mm 2mm;margin-bottom:3.4mm}
+.tech h2{border:0;padding:0;margin-bottom:1.4mm}
+.tech p{margin:0 0 1.8mm}
+.tech .list li{margin-bottom:.9mm}
+.tech .list b{color:var(--ink)}
+.foot{position:absolute;left:11mm;right:11mm;bottom:6mm;display:flex;justify-content:flex-end;color:var(--muted);font-size:7.2pt}
+.foot a{color:var(--accent);font-weight:600}
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="head">
+    <img src="foto.jpg" alt="">
+    <div>
+      <h1>JONATAS VALCÁCIO</h1>
+      <p class="role">DESIGNER GRÁFICO SÊNIOR &nbsp;/&nbsp; DIRETOR DE ARTE</p>
+      <p class="meta">29 anos &nbsp;•&nbsp; Atuação em design e direção de arte desde 2015</p>
+      <div class="links">
+        <a class="be" href="https://www.behance.net/jonatasvalccio"><b>Bē</b> behance.net/jonatasvalccio</a>
+        <a class="pf" href="https://jonatasvalcacio.github.io/portfolio/">↗ Portfólio online</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="cols">
+    <aside class="side">
+      <section>
+        <h2>Contato</h2>
+        <dl class="kv">
+          <div><dt>E-mail</dt><dd><a href="mailto:valcaciodesign@gmail.com">valcaciodesign@gmail.com</a></dd></div>
+          <div><dt>Behance</dt><dd><a href="https://www.behance.net/jonatasvalccio">behance.net/jonatasvalccio</a></dd></div>
+          <div><dt>Portfólio</dt><dd><a href="https://jonatasvalcacio.github.io/portfolio/">jonatasvalcacio.github.io/portfolio</a></dd></div>
+          <div><dt>Telefone</dt><dd><a href="https://wa.me/5592981756627">(92) 98175-6627</a></dd></div>
+          <div><dt>Natural</dt><dd>Manaus, AM</dd></div>
+          <div><dt>Residente</dt><dd>São José dos Pinhais, PR</dd></div>
+        </dl>
+      </section>
+
+      <section>
+        <h2>Ferramentas</h2>
+        <div class="tool"><b>Photoshop</b><span class="dots">●●●●<i>●</i></span></div>
+        <div class="tool"><b>Illustrator</b><span class="dots">●●●●<i>●</i></span></div>
+        <div class="tool"><b>CorelDRAW</b><span class="dots">●●●●<i>●</i></span></div>
+        <div class="tool"><b>Premiere</b><span class="dots">●●●<i>●●</i></span></div>
+        <div class="tool"><b>After Effects</b><span class="dots">●●●<i>●●</i></span></div>
+        <div class="tool"><b>Vegas Pro</b><span class="dots">●●●<i>●●</i></span></div>
+        <div class="tool"><b>Cinema 4D</b><span class="dots">●●●<i>●●</i></span></div>
+      </section>
+
+      <section>
+        <h2>IA &amp; Tecnologia</h2>
+        <ul>
+          <li>ChatGPT e IA generativa de imagem</li>
+          <li>Claude e assistentes de código</li>
+          <li>HTML, CSS e JavaScript</li>
+          <li>GitHub e publicação de sites</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Diferenciais</h2>
+        <ul>
+          <li>Excelência no atendimento ao cliente</li>
+          <li>Noções de UI/UX</li>
+          <li>Boa comunicação</li>
+          <li>Experiência com tráfego pago</li>
+          <li>Visão de negócio aplicada ao design</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Formação e cursos</h2>
+        <ul><li><b style="color:var(--ink)">Design Gráfico</b> – Ensino Superior (Uninorte)</li><li>UX/UI Design</li><li>Modelagem 3D</li><li>Relações Humanas e Sinergia para Resultados</li><li>Excelência no atendimento ao cliente</li></ul>
+      </section>
+
+      <section>
+        <h2>Idiomas</h2>
+        <p style="margin:0"><b style="color:var(--ink)">Inglês intermediário</b></p>
+      </section>
+    </aside>
+
+    <main>
+      <section>
+        <h2>Perfil profissional</h2>
+        <p class="lead">Designer e diretor de arte com atuação desde 2015, combinando criatividade e estratégia digital. Uso inteligência artificial e desenvolvimento para ir além da peça: crio sites, ferramentas e soluções digitais que fortalecem marcas, ampliam o engajamento e tornam processos mais ágeis.</p>
+      </section>
+
+      <div class="tech">
+        <h2>IA, desenvolvimento e soluções digitais</h2>
+        <ul class="list">
+          <li><b>Sites e páginas:</b> portfólio interativo com galeria 3D e propostas comerciais em formato web, publicados no GitHub Pages.</li>
+          <li><b>Sistemas, extensões e apps:</b> ferramentas e automações sob medida para rotinas de criação e negócios.</li>
+          <li><b>IA generativa na criação:</b> ilustrações, mockups e conceitos com direção de arte, curadoria e finalização próprias.</li>
+        </ul>
+      </div>
+
+      <section>
+        <h2>Experiência profissional</h2>
+        <div class="job"><h3>Designer Sênior</h3><p class="where"><b>Rodrigues Colchões</b><span>2025 – Atual</span></p>
+          <ul class="list"><li>Direção e criação de campanhas para varejo, mídias digitais, e-commerce e comunicação visual.</li><li>Desenvolvimento de KVs, peças on/off, materiais promocionais, selos 3D e desdobramentos.</li><li>Participação no planejamento de marketing, gestão da identidade visual e ações da marca.</li></ul></div>
+        <div class="job"><h3>Diretor de Arte</h3><p class="where"><b>Vibeup Marketing</b><span>2025 – Atual</span><span>Home office</span></p>
+          <ul class="list"><li>Direção criativa de campanhas e conteúdos para diferentes marcas e segmentos.</li><li>Criação de conceitos visuais, identidades, anúncios e peças digitais orientadas à performance.</li><li>Garantia de consistência visual, qualidade das entregas e adaptação para múltiplos formatos.</li></ul></div>
+        <div class="job"><h3>Designer Gráfico</h3><p class="where"><b>Vanguarda Martech</b><span>Abr – Out/2026</span><span>Home office</span></p>
+          <ul class="list"><li>Atuação em regime remoto no desenvolvimento e adaptação de materiais visuais para comunicação de campanha política de 2026.</li></ul></div>
+        <div class="job"><h3>Designer Gráfico Pleno / Social Media</h3><p class="where"><b>Rebool Camisaria</b><span>2020 – 2024</span></p>
+          <ul class="list"><li>Desenvolvimento de campanhas, branding, materiais promocionais e criativos para tráfego pago.</li><li>Supervisão de marketing e social media, gestão da marca e contato com clientes e fornecedores.</li></ul></div>
+        <div class="job"><h3>Designer Gráfico</h3><p class="where"><b>Seven Graf</b><span>2019</span></p>
+          <ul class="list"><li>Criação de materiais para comunicação visual, mídias digitais e impressas, com atendimento.</li></ul></div>
+        <div class="job"><h3>Designer Gráfico Jr</h3><p class="where"><b>Rebool Camisaria</b><span>2015 – 2018</span></p>
+          <ul class="list"><li>Criação de artes para camisetas personalizadas, mídias digitais, impressas e peças gráficas.</li></ul></div>
+      </section>
+
+    </main>
+  </div>
+</div>
+</body>
+</html>

@@ -558,6 +558,24 @@ h2{font-size:clamp(40px,6.4vw,96px)}
   .hero-stage{width:calc(74svh * 1.792);translate:-51.5% 0}
 }
 
+/* ---------- lab: IA & desenvolvimento ---------- */
+.lab{padding-block:clamp(60px,8vw,110px) clamp(20px,3vw,40px)}
+.lab-head{display:grid;grid-template-columns:1.1fr 1fr;gap:16px clamp(24px,5vw,80px);align-items:end;margin-bottom:clamp(28px,4vw,48px)}
+.lab-head .eyebrow{grid-column:1/-1;margin:0}
+.lab-head h2{font-size:clamp(36px,5vw,72px)}
+.lab-lede{margin:0;max-width:44ch;color:rgba(238,241,235,.72);font-size:clamp(16px,1.4vw,19px)}
+.lab-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.lab-card{border-radius:var(--r-md);padding:22px;display:flex;flex-direction:column;gap:10px;overflow:hidden;min-width:0;
+  background:linear-gradient(160deg,rgba(43,183,255,.12),rgba(255,255,255,.03) 55%)}
+.lab-card svg{width:34px;height:auto;color:#7fd3ff;margin-bottom:6px;transition:transform .6s var(--spring)}
+.lab-card:hover svg{transform:scale(1.12) rotate(-6deg)}
+.lab-card h3{font-size:clamp(20px,1.7vw,24px);letter-spacing:-.02em;line-height:1.1}
+.lab-card p{margin:0;font-size:15px;color:rgba(238,241,235,.72)}
+.lab-card small{margin-top:auto;padding-top:8px;font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:#7fd3ff}
+@media (max-width:1050px){.lab-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:760px){.lab-head{grid-template-columns:1fr}}
+@media (max-width:520px){.lab-grid{grid-template-columns:1fr}}
+
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.001s!important;animation-iteration-count:1!important;transition-duration:.001s!important}
   html{scroll-behavior:auto}

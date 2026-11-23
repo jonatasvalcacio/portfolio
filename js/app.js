@@ -209,11 +209,11 @@
     pill.style.opacity = 1; pill.style.width = a.offsetWidth + 'px';
     pill.style.transform = `translateX(${a.offsetLeft}px)`;
   };
-  const sections = ['hero', 'sobre', 'projetos', 'arquivo', 'pacotes', 'trajetoria', 'perfil', 'contato'].map(id => document.getElementById(id));
+  const sections = ['hero', 'sobre', 'projetos', 'arquivo', 'lab', 'pacotes', 'trajetoria', 'perfil', 'contato'].map(id => document.getElementById(id));
   const sio = new IntersectionObserver(entries => {
     entries.forEach(e => {
       if (!e.isIntersecting) return;
-      let id = e.target.id; if (id === 'arquivo' || id === 'trajetoria' || id === 'pacotes') id = 'perfil';
+      let id = e.target.id; if (id === 'arquivo' || id === 'lab' || id === 'trajetoria' || id === 'pacotes') id = 'perfil';
       navLinks.forEach(a => a.classList.toggle('is-active', a.dataset.nav === id));
       movePill(navLinks.find(a => a.dataset.nav === id));
     });
