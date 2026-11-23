@@ -35,7 +35,7 @@
     { id: 'auraz', title: 'Auraz', category: 'Branding & Embalagem', chapter: 'Identidade', year: 'Case',
       role: 'Identidade · Manual de marca · Embalagens · Aplicações', statement: 'Sua casa de A a Z.',
       description: 'Identidade visual para uma marca de cama, mesa e banho que fala com o público de forma próxima e acolhedora. Um logotipo tipográfico de serifas finas e uma paleta de terra, linho e cobre, inspirada em fibras naturais e na madeira amazônica, formam um sistema documentado em manual de marca e aplicado em etiquetas bordadas, linha completa de embalagens, fachada de loja e produtos em uso no dia a dia da casa.',
-      accent: '#b87444', cover: `${BASE}projects/auraz/04.jpg`, images: P('auraz', ['01', '02', 'm1', 'm2', 'm3', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12']) },
+      accent: '#b87444', cover: `${BASE}projects/auraz/02.jpg`, images: P('auraz', ['01', '02', 'm1', 'm2', 'm3', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12']) },
     { id: 'cirio', title: 'Círio de Nazaré', category: 'Campanha & Identidade', chapter: 'Campanha', year: '2026',
       role: 'Conceito · Identidade visual · Peças e aplicações', statement: 'Onde tem fé, tem amor.',
       description: 'Identidade visual e campanha da Rodrigues Colchões como patrocinadora oficial do 234º Círio de Nossa Senhora de Nazaré. Um universo ilustrado em azul e dourado que traduz devoção, acolhimento e a cultura amazônica — de camisas, copos e bonés à ventarola com a Oração do Círio. Ilustrações e mockups criados com apoio de IA generativa, com direção de arte, curadoria e finalização próprias.',
